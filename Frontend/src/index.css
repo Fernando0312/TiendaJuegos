@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("../../../public/img/fondoGame.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0e0;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.85); /* sombra oscura */
+  z-index: -1; /* detrás del contenido */
+}
+
+.titulo-principal {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00bfff; /* azul neón */
+  text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.97rem;
+    background-size: cover;
+    background-position: center;
+  }
+  .titulo-principal {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,162 @@
+/* src/Components/Usuario/ControlUsuarios.css */
+
+.usuarios-wrapper {
+  max-width: 1100px;
+  margin: 48px auto;
+  padding: 36px;
+  background: linear-gradient(120deg, #232a34 80%, #00bfff22 100%);
+  border-radius: 22px;
+  box-shadow: 0 10px 40px rgba(0, 191, 255, 0.13);
+  border: 2.5px solid #232a34;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.titulo-usuarios {
+  color: #00e6ff;
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 16px;
+  text-shadow: 0 0 6px #00bfff88;
+}
+
+.btn-volver {
+  background-color: #00bfff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 16px 0;
+}
+
+.btn-volver:hover {
+  background-color: #009edb;
+}
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #00bfff33;
+}
+
+.tabla-usuarios tr:nth-child(even) {
+  background-color: #2a2f39;
+}
+
+.tabla-usuarios tr:hover {
+  background-color: rgba(0, 191, 255, 0.06);
+}
+
+.tabla-usuarios th {
+  color: #8fdfff;
+}
+
+.btn-editar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-right: 6px;
+}
+
+.btn-editar:hover {
+  background-color: #0056b3;
+}
+
+.btn-eliminar {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-left: 10;
+}
+
+.btn-eliminar:hover {
+  background-color: #d7263d;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #1e2228;
+  padding: 30px;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 16px rgba(0, 191, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-content input,
+.modal-content select {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #232a34;
+  color: white;
+  border: 1.5px solid #00bfff55;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+  outline: none;
+  border-color: #00e6ff;
+}
+
+.modal-content .btn-primary {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.modal-content .btn-primary:hover {
+  background-color: #009edb;
+}
+
+.modal-content .btn-secondary {
+  background-color: transparent;
+  border: 2px solid #ff4c4c;
+  color: #ff4c4c;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.modal-content .btn-secondary:hover {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+.botones-accion {
+  display: flex;
+  gap: 7px; /* espacio entre los botones */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}

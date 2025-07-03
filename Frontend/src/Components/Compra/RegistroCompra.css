@@ -1,0 +1,45 @@
+.registro-compra-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start; /* o center si quiero centrar completo */
+  min-height: 80vh;
+  padding-top: 4rem;
+}
+
+.tarjeta-sin-compras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1rem; /* espacio arriba y abajo */
+  max-width: 500px;
+  padding: 2rem;
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  border: 2px solid #00f0ff;
+  box-shadow: 0 0 15px #00f0ff55;
+}
+
+.tarjeta-sin-compras img {
+  width: 100px;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+.tarjeta-sin-compras h4 {
+  color: #00e5ff;
+  font-size: 1.5rem;
+}
+.tarjeta-sin-compras p {
+  color: #aaa;
+  font-size: 1rem;
+}
+.tarjeta-sin-compras a.btn {
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}

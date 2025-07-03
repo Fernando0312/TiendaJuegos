@@ -1,0 +1,374 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+/* Fondo gamer con gradiente y detalles */
+.login-bg-gamer {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(120deg, #181c24 80%, #00bfff22 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 999;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+
+.login-container-gamer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card-gamer {
+  background: linear-gradient(120deg, #232a34 80%, #00bfff22 100%);
+  border-radius: 22px;
+  box-shadow: 0 10px 40px rgba(0, 191, 255, 0.13), 0 2px 12px #000a;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  max-width: 410px;
+  width: 98vw;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.login-logo {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.login-logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.login-logo-gamer {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #00bfff33;
+  background: #181c24;
+  border: 2.5px solid #00bfff44;
+}
+
+.login-title {
+  margin-bottom: 20px;
+}
+
+.login-title-gamer {
+  font-family: "Orbitron", sans-serif;
+  color: #00e6ff;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 12px #000a;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.login-subtitle-gamer {
+  color: #b0c4de;
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Segoe UI", "Inter", Arial, sans-serif;
+}
+
+.login-form-gamer {
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.login-input-gamer {
+  background: #232a34;
+  border: 1.5px solid #00bfff55;
+  color: #e0e0e0;
+  border-radius: 10px;
+  font-size: 1.08rem;
+  padding: 0.7rem 1.1rem;
+  margin-bottom: 0.5rem;
+  transition: border 0.2s;
+}
+
+.login-input-gamer:focus {
+  border-color: #00e6ff;
+  outline: none;
+  background: #232a34;
+  color: #fff;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0074e0;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.login-btn-gamer {
+  background: linear-gradient(90deg, #00bfff 60%, #232a34 100%);
+  color: white;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.7rem 0;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px #00bfff22;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.login-button:hover {
+  background-color: #005bb5;
+}
+
+.login-btn-gamer:hover {
+  background: #232a34;
+  color: #00e6ff;
+  border-color: #00e6ff;
+}
+
+.login-error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.login-forgot {
+  color: #999;
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.login-divider {
+  border-top: 1px solid #333;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 0.85em;
+  color: #999;
+}
+
+.login-footer-gamer {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.2rem;
+  color: #b0c4de;
+  font-size: 1.01rem;
+}
+
+.login-link-gamer {
+  color: #00e6ff;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.login-link-gamer:hover {
+  color: #ffb300;
+}
+
+.login-providers {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.provider {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: white;
+  cursor: pointer;
+}
+
+.provider.xbox {
+  background-color: #107c10;
+}
+.provider.playstation {
+  background-color: #003087;
+}
+.provider.nintendo {
+  background-color: #e60012;
+}
+.provider.steam {
+  background-color: #000;
+}
+
+/* Registro de usuario estilos personalizados */
+.registro-container-gamer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registro-card-gamer {
+  background: linear-gradient(120deg, #232a34 80%, #00bfff22 100%);
+  border-radius: 22px;
+  box-shadow: 0 10px 40px rgba(0, 191, 255, 0.13), 0 2px 12px #000a;
+  padding: 2.5rem 3.5rem 2rem 3.5rem;
+  max-width: 700px;
+  width: 98vw;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.registro-logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.registro-logo-gamer {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #00bfff33;
+  background: #181c24;
+  border: 2.5px solid #00bfff44;
+}
+
+.registro-title-gamer {
+  font-family: "Orbitron", sans-serif;
+  color: #00e6ff;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 12px #000a;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.registro-subtitle-gamer {
+  color: #b0c4de;
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Segoe UI", "Inter", Arial, sans-serif;
+}
+
+.registro-form-gamer {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.registro-input-gamer {
+  background: #232a34;
+  border: 1.5px solid #00bfff55;
+  color: #e0e0e0;
+  border-radius: 10px;
+  font-size: 1.08rem;
+  padding: 0.7rem 1.1rem;
+  margin-bottom: 0.5rem;
+  transition: border 0.2s;
+}
+
+.registro-input-gamer:focus {
+  border-color: #00e6ff;
+  outline: none;
+  background: #232a34;
+  color: #fff;
+}
+
+.registro-btn-gamer {
+  background: linear-gradient(90deg, #00bfff 60%, #232a34 100%);
+  color: white;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.7rem 0;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px #00bfff22;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.registro-btn-gamer:hover {
+  background: #232a34;
+  color: #00e6ff;
+  border-color: #00e6ff;
+}
+
+.registro-footer-gamer {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.2rem;
+  color: #b0c4de;
+  font-size: 1.01rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login-card-gamer {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    max-width: 99vw;
+  }
+  .login-title-gamer {
+    font-size: 1.3rem;
+  }
+  .login-logo-gamer {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 900px) {
+  .registro-card-gamer {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    max-width: 99vw;
+  }
+  .registro-title-gamer {
+    font-size: 1.3rem;
+  }
+  .registro-logo-gamer {
+    width: 70px;
+    height: 70px;
+  }
+}
